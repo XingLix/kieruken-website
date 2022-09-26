@@ -13,9 +13,9 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
+        <h2 className={styles.title}>
           Website currently in development. <span>Come back later ヾ(≧▽≦*)o<span>
-        </h1>
+        </h2>
       </main>
 
       <footer className={styles.footer}>
