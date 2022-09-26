@@ -13,10 +13,8 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Website currently in development.{' '}
-          <span>Come back later ヾ(≧▽≦*)o</span>
-        </h1>
+        <h1 className={styles.title}>Website currently in development. </h1>
+        <h6>Come back later ヾ(≧▽≦*)o</h6>
       </main>
 
       <footer className={styles.footer}>

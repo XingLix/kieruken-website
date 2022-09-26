@@ -28,7 +28,7 @@
   flex-grow: 1;
 }
 
-.title span {
+.title h6 {
   color: #0070f3;
   text-decoration: none;
 }
