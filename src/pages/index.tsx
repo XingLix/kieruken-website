@@ -14,7 +14,7 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Website currently in development. Come back later ヾ(≧▽≦*)o
+          Website currently in development. <span>Come back later ヾ(≧▽≦*)o<span>
         </h1>
       </main>
 
