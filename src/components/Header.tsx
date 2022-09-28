@@ -3,8 +3,8 @@ import { MenuIcon } from '@heroicons/react/outline';
 
 export default function Header() {
   return (
-    <nav className='absolute flex justify-between w-full m-5'>
-      <div className='dark:invert'>
+    <nav className='absolute flex justify-between w-full mt-5'>
+      <div className='dark:invert ml-5'>
         <Image
           src='/images/logo.png'
           alt='Kieruken Logo'
