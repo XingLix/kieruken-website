@@ -61,28 +61,28 @@ export default function Header() {
                           <li className=''>
                             <a
                               href='#'
-                              className='flex justify-center py-1 my-4 rounded-md shadow-md shadow-blue-500 hover:animate-pulse border-t border-blue-500'
+                              className='flex justify-center py-1 my-4 rounded-md shadow-md shadow-blue-500 hover:animate-pulse'
                             >
                               <HomeIcon className='w-5 h-5 mt-1' />
                               <span className='ml-2'>Home</span>
                             </a>
                             <a
                               href='#'
-                              className='flex justify-center py-1 my-4 rounded-md shadow-md shadow-blue-500 hover:animate-pulse border-t border-blue-500'
+                              className='flex justify-center py-1 my-4 rounded-md shadow-md shadow-blue-500 hover:animate-pulse'
                             >
                               <DesktopComputerIcon className='w-5 h-5 mt-1' />
                               <span className='ml-2'>Projects</span>
                             </a>
                             <a
                               href='#'
-                              className='flex justify-center py-1 my-4 rounded-md shadow-md shadow-blue-500 hover:animate-pulse border-t border-blue-500'
+                              className='flex justify-center py-1 my-4 rounded-md shadow-md shadow-blue-500 hover:animate-pulse'
                             >
                               <UserCircleIcon className='w-5 h-5 mt-1' />
                               <span className='ml-2'>About Us</span>
                             </a>
                             <a
                               href='#'
-                              className='flex justify-center py-1 my-4 rounded-md shadow-md shadow-blue-500 hover:animate-pulse border-t border-blue-500'
+                              className='flex justify-center py-1 my-4 rounded-md shadow-md shadow-blue-500 hover:animate-pulse'
                             >
                               <MailIcon className='w-5 h-5 mt-1' />
                               <span className='ml-2'>Contact Us</span>
