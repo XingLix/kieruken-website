@@ -8,7 +8,6 @@ import {
   DesktopComputerIcon,
 } from '@heroicons/react/solid';
 import { Popover } from '@headlessui/react';
-import { useState } from 'react';
 
 export default function Header() {
   return (

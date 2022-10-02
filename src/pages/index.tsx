@@ -8,7 +8,7 @@ const Home: NextPage = () => {
   return (
     <div className='h-screen scrollbar-thin scrollbar-thumb-rounded-md scrollbar-thumb-blue-600 scrollbar-track-gray-900'>
       <Head>
-        <title>Kieruken - Home</title>
+        <title>Kieruken | Home</title>
         <meta name='description' content='Website developed by Kieruken' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
