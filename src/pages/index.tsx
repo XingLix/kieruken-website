@@ -1,11 +1,12 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Header from '../components/home/Header';
+import Footer from '../components/home/Footer';
+import ShootingStars from '../components/ShootingStars';
 
 const Home: NextPage = () => {
   return (
-    <div className=''>
+    <div className='h-screen scrollbar-thin scrollbar-thumb-rounded-md scrollbar-thumb-blue-600 scrollbar-track-gray-900'>
       <Head>
         <title>Kieruken - Home</title>
         <meta name='description' content='Website developed by Kieruken' />
@@ -15,11 +16,12 @@ const Home: NextPage = () => {
       <Header />
       <main className='flex flex-col items-center justify-center flex-1 min-h-screen py-16 text-center'>
         <div className='text-5xl leading-[4rem]'>
-          Website currently in development.{' '}
+          Hello, Welcome to my website!
         </div>
         <div className='text-3xl text-blue-700'>Come back later</div>
         <div className='text-3xl text-blue-700'>ヾ(≧▽≦*)o</div>
       </main>
+      <ShootingStars />
       <Footer />
     </div>
   );

@@ -19,6 +19,9 @@ export default function Footer() {
             />
           </span>
         </a>
+        <button>
+          <a href='#top'>e</a>
+        </button>
       </div>
     </footer>
   );
