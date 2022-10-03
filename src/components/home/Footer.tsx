@@ -23,7 +23,7 @@ export default function Footer() {
         </a>
         <div className='ml-5'>
           <Tooltip label='Back to top'>
-            <button className='w-10 h-10 border-2 border-blue-500 rounded-2xl'>
+            <button className='w-10 h-10 border-2 border-blue-500 rounded-2xl animate-pulse'>
               <a href='#top'>
                 <ArrowUpIcon className='w-5 h-5 ml-2' aria-hidden='true' />
               </a>

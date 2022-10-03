@@ -8,6 +8,7 @@ import {
   DesktopComputerIcon,
 } from '@heroicons/react/solid';
 import { Popover } from '@headlessui/react';
+import Link from 'next/link';
 
 export default function Header() {
   return (
@@ -59,34 +60,42 @@ export default function Header() {
                           </div>
                           <ul className='w-full text-lg font-medium text-center'>
                             <li className=''>
-                              <a
-                                href='#'
-                                className='flex justify-center py-1 my-4 rounded-md shadow-md shadow-blue-500 hover:animate-pulse'
-                              >
-                                <HomeIcon className='w-5 h-5 mt-1' />
-                                <span className='ml-2'>Home</span>
-                              </a>
-                              <a
-                                href='#'
-                                className='flex justify-center py-1 my-4 rounded-md shadow-md shadow-blue-500 hover:animate-pulse'
-                              >
-                                <DesktopComputerIcon className='w-5 h-5 mt-1' />
-                                <span className='ml-2'>Projects</span>
-                              </a>
-                              <a
-                                href='#'
-                                className='flex justify-center py-1 my-4 rounded-md shadow-md shadow-blue-500 hover:animate-pulse'
-                              >
-                                <UserCircleIcon className='w-5 h-5 mt-1' />
-                                <span className='ml-2'>About Me</span>
-                              </a>
-                              <a
-                                href='#'
-                                className='flex justify-center py-1 my-4 rounded-md shadow-md shadow-blue-500 hover:animate-pulse'
-                              >
-                                <MailIcon className='w-5 h-5 mt-1' />
-                                <span className='ml-2'>Contact Me</span>
-                              </a>
+                              <Link href='/'>
+                                <a
+                                  href='#'
+                                  className='flex justify-center py-1 my-4 rounded-md shadow-md shadow-blue-500 hover:animate-pulse'
+                                >
+                                  <HomeIcon className='w-5 h-5 mt-1' />
+                                  <span className='ml-2'>Home</span>
+                                </a>
+                              </Link>
+                              <Link href='/projects'>
+                                <a
+                                  href='#'
+                                  className='flex justify-center py-1 my-4 rounded-md shadow-md shadow-blue-500 hover:animate-pulse'
+                                >
+                                  <DesktopComputerIcon className='w-5 h-5 mt-1' />
+                                  <span className='ml-2'>Projects</span>
+                                </a>
+                              </Link>
+                              <Link href='/users/kieruken'>
+                                <a
+                                  href='#'
+                                  className='flex justify-center py-1 my-4 rounded-md shadow-md shadow-blue-500 hover:animate-pulse'
+                                >
+                                  <UserCircleIcon className='w-5 h-5 mt-1' />
+                                  <span className='ml-2'>About Me</span>
+                                </a>
+                              </Link>
+                              <Link href='/contact'>
+                                <a
+                                  href='#'
+                                  className='flex justify-center py-1 my-4 rounded-md shadow-md shadow-blue-500 hover:animate-pulse'
+                                >
+                                  <MailIcon className='w-5 h-5 mt-1' />
+                                  <span className='ml-2'>Contact Me</span>
+                                </a>
+                              </Link>
                             </li>
                           </ul>
                         </div>
@@ -101,40 +110,48 @@ export default function Header() {
         <div className='hidden mr-10 sm:inline'>
           <ul className='justify-center text-lg font-medium sm:flex'>
             <li className=''>
-              <a
-                href='#'
-                className='flex justify-center px-4 py-1 my-4 rounded-md hover:border-b hover:border-blue-500 hover:animate-pulse'
-              >
-                <HomeIcon className='w-5 h-5 mt-1' />
-                <span className='ml-2'>Home</span>
-              </a>
+              <Link href='/'>
+                <a
+                  href='#'
+                  className='flex justify-center px-4 py-1 my-4 rounded-md hover:border-b hover:border-blue-500 hover:animate-pulse'
+                >
+                  <HomeIcon className='w-5 h-5 mt-1' />
+                  <span className='ml-2'>Home</span>
+                </a>
+              </Link>
             </li>
             <li className=''>
-              <a
-                href='#'
-                className='flex justify-center px-4 py-1 my-4 rounded-md hover:border-b hover:border-blue-500 hover:animate-pulse'
-              >
-                <DesktopComputerIcon className='w-5 h-5 mt-1' />
-                <span className='ml-2'>Projects</span>
-              </a>
+              <Link href='/projects'>
+                <a
+                  href='#'
+                  className='flex justify-center px-4 py-1 my-4 rounded-md hover:border-b hover:border-blue-500 hover:animate-pulse'
+                >
+                  <DesktopComputerIcon className='w-5 h-5 mt-1' />
+                  <span className='ml-2'>Projects</span>
+                </a>
+              </Link>
             </li>
             <li className=''>
-              <a
-                href='#'
-                className='flex justify-center px-4 py-1 my-4 rounded-md hover:border-b hover:border-blue-500 hover:animate-pulse'
-              >
-                <UserCircleIcon className='w-5 h-5 mt-1' />
-                <span className='ml-2'>About Me</span>
-              </a>
+              <Link href='/users/kieruken'>
+                <a
+                  href='#'
+                  className='flex justify-center px-4 py-1 my-4 rounded-md hover:border-b hover:border-blue-500 hover:animate-pulse'
+                >
+                  <UserCircleIcon className='w-5 h-5 mt-1' />
+                  <span className='ml-2'>About Me</span>
+                </a>
+              </Link>
             </li>
             <li className=''>
-              <a
-                href='#'
-                className='flex justify-center px-4 py-1 my-4 rounded-md hover:border-b hover:border-blue-500 hover:animate-pulse'
-              >
-                <MailIcon className='w-5 h-5 mt-1' />
-                <span className='ml-2'>Contact Me</span>
-              </a>
+              <Link href='/contact'>
+                <a
+                  href='#'
+                  className='flex justify-center px-4 py-1 my-4 rounded-md hover:border-b hover:border-blue-500 hover:animate-pulse'
+                >
+                  <MailIcon className='w-5 h-5 mt-1' />
+                  <span className='ml-2'>Contact Me</span>
+                </a>
+              </Link>
             </li>
           </ul>
         </div>
