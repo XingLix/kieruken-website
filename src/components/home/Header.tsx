@@ -69,7 +69,7 @@ export default function Header() {
                                   <span className='ml-2'>Home</span>
                                 </a>
                               </Link>
-                              <Link href='/projects'>
+                              <Link href='/projects/kieruken'>
                                 <a
                                   href='#'
                                   className='flex justify-center py-1 my-4 rounded-md shadow-md shadow-blue-500 hover:animate-pulse'
@@ -121,7 +121,7 @@ export default function Header() {
               </Link>
             </li>
             <li className=''>
-              <Link href='/projects'>
+              <Link href='/projects/kieruken'>
                 <a
                   href='#'
                   className='flex justify-center px-4 py-1 my-4 rounded-md hover:border-b hover:border-blue-500 hover:animate-pulse'
