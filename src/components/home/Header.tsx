@@ -41,7 +41,7 @@ export default function Header() {
                       {({ close }) => (
                         <div className=''>
                           <div className='flex justify-between'>
-                            <div className='dark:invert'>
+                            <div className='invert'>
                               <Image
                                 src='/images/logo.png'
                                 alt='Kieruken Logo'

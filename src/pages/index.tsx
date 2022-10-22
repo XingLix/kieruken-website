@@ -2,6 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Header from '../components/home/Header';
 import Footer from '../components/home/Footer';
+import About from '../components/home/About';
 import ShootingStars from '../components/ShootingStars';
 
 const Home: NextPage = () => {
@@ -22,6 +23,7 @@ const Home: NextPage = () => {
         <div className='text-3xl text-blue-700'>ヾ(≧▽≦*)o</div>
       </main>
       <ShootingStars />
+      <About />
       <Footer />
     </div>
   );
