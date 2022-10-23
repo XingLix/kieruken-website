@@ -16,11 +16,11 @@ export default function About() {
       return alert('Please enter a username');
     }
 
-    if (users.users.includes(user)) {
-      router.push(`/users/${user.toLowerCase()}`);
-    } else {
-      alert('User not found');
+    if (!users.users.includes(user)) {
+      return alert('User not found');
     }
+
+    router.push(`/users/${user.toLowerCase()}`);
   }
 
   return (
