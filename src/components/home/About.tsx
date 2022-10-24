@@ -42,7 +42,7 @@ export default function About() {
           <div className='text-md sm:text-2xl mt-5 leading-6 md:leading-10 max-w-lg'>
             I am a {getAge()} year old student. I like programming and I am
             currently learning web development. This website will be used as a
-            portfolio for mine and my friends projects. I will also store other
+            portfolio for me and my friends projects. I will also store other
             miscellaneous things here.{' '}
             <span className='text-blue-800'>
               <Link href='/users/kieruken'>Learn More</Link>
