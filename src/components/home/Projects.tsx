@@ -19,7 +19,7 @@ export default function Projects() {
         <div className='text-md sm:text-2xl mb-10 mt-2'>
           Projects I have worked on:
         </div>
-        <div className='ml-5'>
+        <div className='mx-auto'>
           <Swiper
             effect={'coverflow'}
             grabCursor={true}
