@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Header from '../components/home/Header';
 import Footer from '../components/home/Footer';
 import About from '../components/home/About';
+import Projects from '../components/home/Projects';
 import ShootingStars from '../components/ShootingStars';
 
 const Home: NextPage = () => {
@@ -24,6 +25,7 @@ const Home: NextPage = () => {
       </main>
       <ShootingStars />
       <About />
+      <Projects />
       <Footer />
     </div>
   );

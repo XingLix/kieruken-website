@@ -1,10 +1,10 @@
-import { getAge } from '../../helpers/globalFunctions';
 import Link from 'next/link';
-import { Autocomplete } from '@mantine/core';
+import { Autocomplete, Tooltip } from '@mantine/core';
 import users from '../../data/users.json';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
-import { Tooltip } from '@mantine/core';
+import { getAge } from '../../helpers/globalFunctions';
+import { ArrowRightIcon } from '@heroicons/react/solid';
 
 export default function About() {
   const router = useRouter();
@@ -43,7 +43,10 @@ export default function About() {
             I am a {getAge()} year old student. I like programming and I am
             currently learning web development. This website will be used as a
             portfolio for mine and my friends projects. I will also store other
-            miscellaneous things here.
+            miscellaneous things here.{' '}
+            <span className='text-blue-800'>
+              <Link href='/users/kieruken'>Learn More</Link>
+            </span>
           </div>
           <div className='text-md sm:text-lg mt-20 sm:mt-32 sm:w-11/12 lg:grid grid-cols-2'>
             <div>
@@ -73,10 +76,7 @@ export default function About() {
           </div>
         </div>
         <div>
-          <img
-            src='https://cdn.discordapp.com/attachments/913270003887898674/1012436407765176350/9059BE79-85C8-4CC4-9CA0-EB06CADCD0FA.jpg'
-            className='hidden lg:block rounded-3xl'
-          />
+          <img src='/../images/k.png' className='hidden lg:block rounded-3xl' />
         </div>
       </div>
     </div>
