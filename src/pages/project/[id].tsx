@@ -5,7 +5,6 @@ import Footer from '../../components/home/Footer';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import projects from '../../data/projects.json';
-import { profile } from 'console';
 
 const Project: NextPage = () => {
   const [project, setProject]: any = useState();
