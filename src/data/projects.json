@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "title": "Kieruken",
+    "description": "A website for my portfolio",
+    "image": "./images/icons/k.png",
+    "website": "https://kieruken.com",
+    "github": "https://github.com/XoutDragon/kieruken-website",
+    "tags": ["React", "Next.js", "TailwindCSS"]
+  },
+  {
+    "id": 2,
+    "title": "Hypixel Skyblock Guild Leaderboard",
+    "description": "A skyblock guildleaderboard project lead by Timnoot#4372",
+    "image": "https://guildleaderboard.com/logo459.png",
+    "website": "https://guildleaderboard.com",
+    "discord": "https://discord.gg/ej92B474Ej"
+  },
+  {
+    "id": 3,
+    "title": "Temporarily Unavailable",
+    "description": "Temporarily Unavailable",
+    "image": "https://static.wikia.nocookie.net/pepe/images/3/3f/Sadpepe.png/",
+    "website": "Unavailable",
+    "github": "Unavailable",
+    "discord": "Unavailable",
+    "youtube": "Unavailable",
+    "botInvite": "Unavailable",
+    "tags": ["Unavailable"]
+  }
+]

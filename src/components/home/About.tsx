@@ -44,8 +44,8 @@ export default function About() {
             currently learning web development. This website will be used as a
             portfolio for me and my friends projects. I will also store other
             miscellaneous things here.{' '}
-            <span className='text-blue-800'>
-              <Link href='/users/kieruken'>Learn More</Link>
+            <span className='text-blue-600'>
+              <Link href='/users/kieruken'>Learn More...</Link>
             </span>
           </div>
           <div className='text-md sm:text-lg mt-20 sm:mt-32 sm:w-11/12 lg:grid grid-cols-2'>
@@ -76,7 +76,10 @@ export default function About() {
           </div>
         </div>
         <div>
-          <img src='/../images/k.png' className='hidden lg:block rounded-3xl' />
+          <img
+            src='/../images/icons/k.png'
+            className='hidden lg:block rounded-3xl'
+          />
         </div>
       </div>
     </div>

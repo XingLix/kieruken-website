@@ -8,12 +8,14 @@ import SwiperCore, {
 } from 'swiper';
 import 'swiper/swiper-bundle.min.css';
 import 'swiper/swiper.min.css';
+import Link from 'next/link';
+import projects from '../../data/projects.json';
 
 SwiperCore.use([Navigation, Pagination, Autoplay, EffectFade]);
 
 export default function Projects() {
   return (
-    <div className='m-10 fit-max border-t h-fit'>
+    <div className='mx-10 mt-10 fit-max border-t h-fit'>
       <div className='py-10 px-5'>
         <div className='text-3xl xl:text-5xl font-serif'>Projects</div>
         <div className='text-md sm:text-2xl mb-10 mt-2'>
@@ -29,12 +31,14 @@ export default function Projects() {
               stretch: 0,
               depth: 100,
               modifier: 1,
-              slideShadows: false,
+              slideShadows: true,
             }}
+            slidesPerView='auto'
+            loop={true}
             pagination={true}
             className='mySwiper'
             breakpoints={{
-              480: {
+              0: {
                 slidesPerView: 1,
                 spaceBetween: 20,
               },
@@ -50,38 +54,35 @@ export default function Projects() {
                 slidesPerView: 3,
                 spaceBetween: 50,
               },
+              1440: {
+                slidesPerView: 4,
+                spaceBetween: 50,
+              },
+              2560: {
+                slidesPerView: 5,
+                spaceBetween: 50,
+              },
             }}
           >
-            <SwiperSlide>
-              <ProjectsContainer
-                title='Kieruken'
-                description='A website for my portfolio.'
-                github='https://github.com/XoutDragon/kieruken-website'
-                website='https://kieruken.dev'
-                invert={true}
-                image='/../images/k.png'
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <ProjectsContainer
-                title='Discord Bot'
-                description='Temp Info'
-                github='e'
-                discord='e'
-                botInvite='e'
-                image='https://cdn.discordapp.com/avatars/938594706353434714/5ddf9cfc9954465b034230d2372a59f6.png?size=1024'
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <ProjectsContainer
-                title='XoutDragon'
-                description='Gamer'
-                youtube='e'
-                discord='e'
-                image='https://cdn.discordapp.com/attachments/913270003887898674/1012436407765176350/9059BE79-85C8-4CC4-9CA0-EB06CADCD0FA.jpg'
-              />
-            </SwiperSlide>
+            {projects.slice(0, 3).map((project, i) => (
+              <SwiperSlide>
+                <ProjectsContainer
+                  key={i}
+                  title={project.title}
+                  description={project.description}
+                  image={project.image}
+                  github={project.github}
+                  website={project.website}
+                  youtube={project.youtube}
+                  discord={project.discord}
+                  botInvite={project.botInvite}
+                />
+              </SwiperSlide>
+            ))}
           </Swiper>
+        </div>
+        <div className='text-xl text-center text-blue-600 mt-3'>
+          <Link href='/projects/kieruken'>More Projects...</Link>
         </div>
       </div>
     </div>

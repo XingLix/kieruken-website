@@ -21,15 +21,17 @@ export const ProjectsContainer = (props: any) => {
 
   return (
     <div className='max-w-xs'>
-      <div className='bg-blue-700 p-4 lg:px-8 lg:pt-8 lg:pb-4 rounded-t-3xl flex justify-between'>
-        <div className='mr-5'>
+      <div className='bg-blue-700 p-4 lg:px-6 lg:pt-6 lg:pb-4 rounded-t-3xl flex justify-between'>
+        <div className=''>
           <img
             src={props.image}
             alt={`${props.title} Image`}
-            className={`w-16 h-16 rounded-3xl ${props.invert ? 'invert' : ''}`}
+            className={`h-16 w-auto min-w-fit rounded-3xl ${
+              props.invert ? 'invert' : ''
+            }`}
           />
         </div>
-        <div className='text-2xl translate-y-4 sm:translate-y-5'>
+        <div className='text-2xl align-center h-full my-auto text-right'>
           {props.title}
         </div>
       </div>
