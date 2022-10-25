@@ -31,7 +31,7 @@ export const ProjectsContainer = (props: any) => {
             }`}
           />
         </div>
-        <div className='text-2xl align-center h-full my-auto text-right'>
+        <div className='text-lg max-w-xss sm:max-w-none sm:text-2xl align-center h-full my-auto text-right'>
           {props.title}
         </div>
       </div>

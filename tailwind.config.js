@@ -6,6 +6,9 @@ module.exports = {
       minHeight: (theme) => ({
         ...theme('spacing'),
       }),
+      maxWidth: (theme) => ({
+        xss: '10rem',
+      }),
       screens: {
         xs: '425px',
       },
