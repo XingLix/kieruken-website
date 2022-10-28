@@ -26,7 +26,7 @@ export const ProjectsContainer = (props: any) => {
           <img
             src={props.image}
             alt={`${props.title} Image`}
-            className={`h-16 w-auto min-w-fit rounded-3xl ${
+            className={`h-16 min-w-fit rounded-3xl ${
               props.invert ? 'invert' : ''
             }`}
           />
@@ -35,7 +35,7 @@ export const ProjectsContainer = (props: any) => {
           {props.title}
         </div>
       </div>
-      <div className='bg-black px-8 pt-8 pb-4 rounded-b-3xl min-h-52 shadow-2xl shadow-black'>
+      <div className='bg-black px-8 pt-8 pb-4 rounded-b-3xl min-h-60 shadow-2xl shadow-black'>
         <div className='text-white min-h-20'>{props.description}</div>
         <div className='w-5/6'>
           <div className='grid grid-cols-2 gap-x-6'>

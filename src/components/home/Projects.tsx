@@ -66,17 +66,19 @@ export default function Projects() {
           >
             {projects.slice(0, 3).map((project, i) => (
               <SwiperSlide>
-                <ProjectsContainer
-                  key={i}
-                  title={project.title}
-                  description={project.description}
-                  image={project.image}
-                  github={project.github}
-                  website={project.website}
-                  youtube={project.youtube}
-                  discord={project.discord}
-                  botInvite={project.botInvite}
-                />
+                <div key={i}>
+                  <ProjectsContainer
+                    key={i}
+                    title={project.title}
+                    description={project.description}
+                    image={project.image}
+                    github={project.github}
+                    website={project.website}
+                    youtube={project.youtube}
+                    discord={project.discord}
+                    botInvite={project.botInvite}
+                  />
+                </div>
               </SwiperSlide>
             ))}
           </Swiper>
