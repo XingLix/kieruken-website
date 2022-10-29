@@ -15,7 +15,7 @@ SwiperCore.use([Navigation, Pagination, Autoplay, EffectFade]);
 
 export default function Projects() {
   return (
-    <div className='mx-10 mt-10 fit-max border-t h-fit'>
+    <div className='mx-5 mt-10 fit-max border-t h-fit'>
       <div className='py-10 px-5'>
         <div className='text-3xl xl:text-5xl font-serif'>Projects</div>
         <div className='text-md sm:text-2xl mb-10 mt-2'>
@@ -52,7 +52,7 @@ export default function Projects() {
               },
               1024: {
                 slidesPerView: 3,
-                spaceBetween: 50,
+                spaceBetween: 10,
               },
               1440: {
                 slidesPerView: 4,

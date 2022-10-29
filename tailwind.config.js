@@ -10,6 +10,7 @@ module.exports = {
         xss: '10rem',
       }),
       screens: {
+        xss: '375px',
         xs: '425px',
       },
     },

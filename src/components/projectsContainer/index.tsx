@@ -29,7 +29,7 @@ export const ProjectsContainer = (props: any) => {
             className={`h-16 w-16 rounded-3xl ${props.invert ? 'invert' : ''}`}
           />
         </div>
-        <div className='text-lg max-w-xss sm:max-w-none sm:text-2xl align-center h-full my-auto text-right'>
+        <div className='text-xs max-w-[6rem] xss:max-w-[10rem] xs:max-w-[12rem] xss:text-xl align-center h-full my-auto text-right'>
           {props.title}
         </div>
       </div>
