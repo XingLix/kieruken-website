@@ -26,9 +26,7 @@ export const ProjectsContainer = (props: any) => {
           <img
             src={props.image}
             alt={`${props.title} Image`}
-            className={`h-16 w-16 rounded-3xl ${
-              props.invert ? 'invert' : ''
-            }`}
+            className={`h-16 w-16 rounded-3xl ${props.invert ? 'invert' : ''}`}
           />
         </div>
         <div className='text-lg max-w-xss sm:max-w-none sm:text-2xl align-center h-full my-auto text-right'>
@@ -57,7 +55,12 @@ const getResources = (props: any) => {
   let links: any = [];
 
   const github = props.github ? (
-    <a href={props.github} className='flex hover:opacity-70'>
+    <a
+      href={props.github}
+      className='flex hover:opacity-70'
+      target='_blank'
+      rel='noopener noreferrer'
+    >
       <FaGithub className='translate-y-1 mr-2 hidden xs:block' /> Github
     </a>
   ) : (
@@ -65,7 +68,12 @@ const getResources = (props: any) => {
   );
 
   const website = props.website ? (
-    <a href={props.website} className='flex hover:opacity-70'>
+    <a
+      href={props.website}
+      className='flex hover:opacity-70'
+      target='_blank'
+      rel='noopener noreferrer'
+    >
       <FaGlobe className='translate-y-1 mr-2 hidden xs:block' /> Website
     </a>
   ) : (
@@ -73,7 +81,12 @@ const getResources = (props: any) => {
   );
 
   const discord = props.discord ? (
-    <a href={props.discord} className='flex hover:opacity-70'>
+    <a
+      href={props.discord}
+      className='flex hover:opacity-70'
+      target='_blank'
+      rel='noopener noreferrer'
+    >
       <FaDiscord className='translate-y-1 mr-2 hidden xs:block' /> Discord
     </a>
   ) : (
@@ -81,7 +94,12 @@ const getResources = (props: any) => {
   );
 
   const youtube = props.youtube ? (
-    <a href={props.youtube} className='flex hover:opacity-70'>
+    <a
+      href={props.youtube}
+      className='flex hover:opacity-70'
+      target='_blank'
+      rel='noopener noreferrer'
+    >
       <FaYoutube className='translate-y-1 mr-2 hidden xs:block' /> Youtube
     </a>
   ) : (
@@ -89,7 +107,12 @@ const getResources = (props: any) => {
   );
 
   const botInvite = props.botInvite ? (
-    <a href={props.botInvite} className='flex hover:opacity-70'>
+    <a
+      href={props.botInvite}
+      className='flex hover:opacity-70'
+      target='_blank'
+      rel='noopener noreferrer'
+    >
       <FaRobot className='translate-y-1 mr-2 hidden xs:block' /> Bot Invite
     </a>
   ) : (
