@@ -122,14 +122,14 @@ const AboutMe: NextPage = () => {
         <div className='border-t py-10'>
           <div className='text-3xl xl:text-5xl font-serif'>Programming</div>
           <div className='text-2xl my-5 font-semibold'>Github Stats:</div>
-          <div className='md:grid grid-cols-2'>
+          <div className='md:flex'>
             <div className='grid grid-rows-2 gap-4'>
               <img src='https://github-readme-stats.vercel.app/api?username=XoutDragon&theme=cobalt&show_icons=true&count_private=true' />
               <img src='https://github-readme-stats.vercel.app/api/wakatime?username=XoutDragon&theme=cobalt&show_icons=true' />
             </div>
             <img
               src='https://github-readme-stats.vercel.app/api/top-langs/?username=XoutDragon&theme=cobalt&show_icons=true&count_private=true'
-              className='h-88 w-auto -translate-y-9 sm:translate-y-0'
+              className='h-88 w-auto -translate-y-9 sm:translate-y-0 md:ml-10'
             />
           </div>
           <div className='text-2xl my-5 font-semibold'>Tools I Use:</div>
