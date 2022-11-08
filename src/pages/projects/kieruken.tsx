@@ -2,6 +2,8 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Header from '../../components/home/Header';
 import Footer from '../../components/home/Footer';
+import projects from '../../data/projects.json';
+import { ProjectsContainer } from '../../components/projectsContainer';
 
 const Projects: NextPage = () => {
   return (
@@ -12,7 +14,28 @@ const Projects: NextPage = () => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Header />
-      <main></main>
+      <main className='m-8'>
+        <div className='text-center text-3xl my-10'>
+          Projects I Have Worked On
+        </div>
+        <div className='w-full mx-auto flex justify-center'>
+          <div className='flex justify-between flex-col md:grid md:grid-cols-2 gap-6 lg:gap-x-20 lg:grid-cols-3 2xl:grid-cols-6 2xl:gap-x-40'>
+            {projects.map((project) => (
+              <ProjectsContainer
+                key={project.id}
+                title={project.title}
+                description={project.description}
+                image={project.image}
+                github={project.github}
+                website={project.website}
+                youtube={project.youtube}
+                discord={project.discord}
+                botInvite={project.botInvite}
+              />
+            ))}
+          </div>
+        </div>
+      </main>
       <Footer />
     </div>
   );

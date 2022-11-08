@@ -3,6 +3,9 @@ module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   theme: {
     extend: {
+      height: {
+        88: '22rem',
+      },
       minHeight: (theme) => ({
         ...theme('spacing'),
       }),
