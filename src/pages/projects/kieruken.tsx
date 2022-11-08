@@ -19,7 +19,7 @@ const Projects: NextPage = () => {
           Projects I Have Worked On
         </div>
         <div className='w-full mx-auto flex justify-center'>
-          <div className='flex justify-between flex-col md:grid md:grid-cols-2 gap-6 lg:gap-x-20 lg:grid-cols-3 2xl:grid-cols-6 2xl:gap-x-40'>
+          <div className='flex justify-between flex-col md:grid md:grid-cols-2 gap-6 lg:gap-x-20 lg:grid-cols-3 2xl:grid-cols-5 2xl:gap-x-40'>
             {projects.map((project) => (
               <ProjectsContainer
                 key={project.id}
